@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CheckoutActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Customer Information"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/customerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/customerEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/customerPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:hint="XXX-XXX-XXXX"
+        android:inputType="phone"
+        android:maxLength="12" />
+
+    <EditText
+        android:id="@+id/customerAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:hint="Please enter full address with zip-code" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="8dp"
+        android:text="Payment Options"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <RadioGroup
+        android:id="@+id/radioPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Credit/Debit Card"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCOD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Cash on Delivery"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/cardDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/cardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLength="19"
+            android:hint="Card Number (XXXX-XXXX-XXXX-XXXX)"/>
+
+        <EditText
+            android:id="@+id/cardExpiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLength="5"
+            android:hint="Expiry Date (MM/YY)"/>
+
+        <EditText
+            android:id="@+id/cardCVV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="3"
+            android:inputType="number"
+            android:hint="CVV"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/orderPlaceBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#005a6e "
+        android:text="Place Order"
+        android:textSize="20sp" />
+
+</LinearLayout>

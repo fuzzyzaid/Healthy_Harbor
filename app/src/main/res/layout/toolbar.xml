@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#005a6e "
+    android:elevation="5dp">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="#005a6e"
+        android:textColor="@android:color/white"
+        app:tabBackground="@null"
+        app:tabIndicator="@null"
+        app:tabRippleColor="@null">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="@android:color/white" />
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabCategories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textColor="@android:color/white" />
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cart"
+            android:textColor="@android:color/white" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+</androidx.appcompat.widget.Toolbar>
